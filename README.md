@@ -13,4 +13,5 @@ Distribution plot.
 Neural network plot of error.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
 
-
+Model for neural network: feedforward.
+![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/feedforward1.jpg)
