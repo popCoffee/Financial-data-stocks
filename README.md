@@ -14,3 +14,6 @@ Model for neural network: feedforward.
 
 Neural network plot of error.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
+
+The final output of the neural network. It closely matched the original curve when predicting each subsequent point.
+![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/final_nn.png)
