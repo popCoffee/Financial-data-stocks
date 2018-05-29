@@ -5,13 +5,12 @@ Data visualization of multiple bank stocks with python. Then an application of T
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/BAC.png)
 All stocks and closing price of BAC and rolling average that is used in neural network.
 
-
-
 Distribution plot.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/distPlot_MS_.jpg)
 
-Neural network plot of error.
-![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
 
 Model for neural network: feedforward.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/feedforward1.jpg)
+
+Neural network plot of error.
+![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
