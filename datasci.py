@@ -8,25 +8,34 @@ Edited on Sun Mar 18 2018
 
 from pandas_datareader import data, wb
 import pandas as pd
+import fix_yahoo_finance as yf
 import numpy as np
 import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-start = datetime.date(2006, 1, 1)
-end   = datetime.date(2016, 1, 1)
-    #start_date  = "2006-01-01",
-    #end_date    = "2016-01-01",
+
+#start = datetime.date(2006, 1, 1)
+#end   = datetime.date(2016, 1, 1)
+start  = "2016-01-01"
+end    = "2018-01-01"
     
 ##get stock data from google finance
     ##warning: google api can be unstable 
 dimensions  = ['dayOfWeek']
-BAC = data.DataReader("BAC", 'google', start, end)
-CC = data.DataReader("C", 'google', start, end)
-GS = data.DataReader("GS", 'google', start, end)
-JPM = data.DataReader("JPM", 'google', start, end)
-MS = data.DataReader("MS", 'google', start, end)
-WFC = data.DataReader("WFC", 'google', start, end)
+#BAC = data.DataReader("BAC", 'google', start, end)
+#CC = data.DataReader("C", 'google', start, end)
+#GS = data.DataReader("GS", 'google', start, end)
+#JPM = data.DataReader("JPM", 'google', start, end)
+#MS = data.DataReader("MS", 'google', start, end)
+#WFC = data.DataReader("WFC", 'google', start, end)
+yf.pdr_override() 
+BAC = data.get_data_yahoo("BAC", start, end)
+CC = data.get_data_yahoo("C",  start, end)
+GS = data.get_data_yahoo("GS",  start, end)
+JPM = data.get_data_yahoo("JPM", start, end)
+MS = data.get_data_yahoo("MS", start, end)
+WFC = data.get_data_yahoo("WFC", start, end)
 
 list1= ['BAC','C','GS','JPM','MS','WFC']
 
@@ -60,9 +69,12 @@ bsfiltered.idxmax() #best return day
 
 #closing price for each stock
 bank_stocks.xs('Close', level='Stock Info', axis=1, drop_level=True).plot()
+plt.show()
 
 #rolling 30day average in 2008 for bac
 plt.figure(figsize=(12,6))
-BAC['Close'].ix['2008-01-01':'2009-01-01'].rolling(window=15).mean().plot(label='30 Day Avg')
-BAC['Close'].ix['2008-01-01':'2009-01-01'].plot(label='BAC CLOSE')
+BAC['Close'].loc['2016-02-01':].rolling(window=10).mean().plot(label='30 Day Avg')
+BAC['Close'].loc['2016-02-01':].plot(label='BAC Closing')
 plt.legend()
+plt.show()
+
