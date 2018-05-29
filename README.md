@@ -7,10 +7,10 @@ All stocks and closing price of BAC that is used in neural network.
 Rolling average for BAC.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/rollingAvg_BAC_30days_.jpg)
 
-Distribution plot for Morgan Stanley.
+Distribution plot.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/distPlot_MS_.jpg)
 
-Neural network error.
+Neural network plot of error.
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
 
 
