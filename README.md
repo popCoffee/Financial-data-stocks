@@ -2,18 +2,27 @@
 Data visualization of multiple bank stocks with python. Then an application of Tensorflow in python to create a neural network to predict closing price of the given stocks.
 
 ## Analysis
+
+```
+The first plot represents all of the stocks. The second once is BAC's rolling average and BAC closing price which is used as the input to the neural network.
+```
+
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/price_day.png)
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/BAC.png)
-All stocks and closing price of BAC and rolling average that is used in neural network.
 
-Distribution plot.
+```
+Distribution of a bank stock representing the range of the possible returns.
+```
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/distPlot_MS_.jpg)
 
-
-Model for neural network: feedforward.
+```
+A feedforward model for the neural network used. Not to scale.
+```
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/feedforward1.jpg)
 
-Neural network plot of error.
+```
+A plot of the error from the neural network.
+```
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/LearnCurve.png)
 
 ## Final Output 
