@@ -4,7 +4,8 @@ Data visualization of multiple bank stocks with python. Then an application of T
 ## Analysis
 
 ```
-The first plot represents all of the stocks. The second once is BAC's rolling average and BAC closing price which is used as the input to the neural network.
+The first plot represents all of the stocks. The second once is BAC's rolling average 
+and BAC closing price which is used as the input to the neural network.
 ```
 
 ![alt text](https://github.com/popCoffee/Financial-data-stocks/blob/master/pics/price_day.png)
