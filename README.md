@@ -1,5 +1,5 @@
 # Financial-data-stocks
-Data visualization of multiple bank stocks with python. Then an application of Tensorflow in python to create a neural network to predict closing price of the given stocks.
+Data visualization of multiple bank stocks with python. Then an application of Tensorflow in python to create a neural network to predict the closing price of the given stocks.
 
 ## Analysis
 
